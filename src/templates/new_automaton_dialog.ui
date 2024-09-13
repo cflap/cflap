@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<object class="GtkWindow" id="dialog_window">
+		<property name="title">New automaton</property>
+		<property name="default-width">500</property>
+		<property name="default-height">250</property>
+		<property name="resizable">FALSE</property>
+		<child>
+			<object class="GtkBox">
+			<property name="hexpand">true</property>
+			<property name="hexpand-set">true</property>
+			<property name="vexpand">true</property>
+			<property name="vexpand-set">true</property>
+			<property name="orientation">vertical</property>
+			<property name="spacing">20</property>
+			<property name="halign">GTK_ALIGN_CENTER</property>
+			<property name="valign">GTK_ALIGN_CENTER</property>
+				<child>
+					<object class="GtkBox">
+						<property name="hexpand">true</property>
+						<property name="hexpand-set">true</property>
+						<property name="vexpand">true</property>
+						<property name="vexpand-set">true</property>
+						<property name="orientation">horizontal</property>
+						<property name="spacing">20</property>
+						<property name="halign">GTK_ALIGN_CENTER</property>
+						<property name="valign">GTK_ALIGN_CENTER</property>
+						<child>
+							<object class="GtkLabel">
+								<property name="label">Name:</property>
+							</object>
+						</child>
+						<child>
+							<object class="GtkEntry" id="new_automaton_dialog_name_input">
+								<property name="placeholder-text">Automaton name</property>
+							</object>
+						</child>
+					</object>
+				</child>
+				<child>
+					<object class="GtkBox">
+						<property name="hexpand">true</property>
+						<property name="hexpand-set">true</property>
+						<property name="vexpand">true</property>
+						<property name="vexpand-set">true</property>
+						<property name="orientation">horizontal</property>
+						<property name="spacing">20</property>
+						<property name="halign">GTK_ALIGN_CENTER</property>
+						<property name="valign">GTK_ALIGN_CENTER</property>
+						<child>
+							<object class="GtkLabel">
+								<property name="label">Type:</property>
+							</object>
+						</child>
+						<child>
+							<object class="GtkDropDown" id="new_automaton_dialog_drop_down">
+								<property name="model">
+								<object class="GtkStringList">
+								  <items>
+									<item >Finite State Automaton</item>
+									<item>Turing Machine</item>
+								  </items>
+								</object>
+							  </property>
+							</object>
+						</child>
+					</object>
+				</child>
+				<child>
+					<object class="GtkBox">
+						<property name="orientation">horizontal</property>
+						<property name="spacing">20</property>
+						<property name="halign">GTK_ALIGN_CENTER</property>
+						<property name="valign">GTK_ALIGN_CENTER</property>
+						<child>
+							<object class="GtkButton" id="new_automaton_dialog_cancel_button">
+								<property name="label">Cancel</property>
+							</object>
+						</child>
+						<child>
+							<object class="GtkButton" id="new_automaton_dialog_ok_button">
+								<property name="label">Ok</property>
+							</object>
+						</child>
+					</object>
+				</child>
+			</object>
+		</child>
+	</object>
+</interface>

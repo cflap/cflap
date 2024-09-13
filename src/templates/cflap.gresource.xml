@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/cflap">
+	<file preprocess="xml-stripblanks">templates/main_menu.ui</file>
+	<file preprocess="xml-stripblanks">templates/window_template.ui</file>
+	<file preprocess="xml-stripblanks">templates/tab.ui</file>
+	<file preprocess="xml-stripblanks">templates/tab_content.ui</file>
+	<file preprocess="xml-stripblanks">templates/new_automaton_dialog.ui</file>
+	<file preprocess="xml-stripblanks">templates/fsa_menu.ui</file>
+  </gresource>
+</gresources>

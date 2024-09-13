@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<template class="GuiTab" parent="GtkBox">
+		<property name="spacing">5</property>
+		<child>
+			<object class="GtkLabel" id="label">
+				<property name="label">Welcome</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkButton" id="close_button">
+				<property name="label">X</property>
+			</object>
+		</child>
+	</template>
+</interface>

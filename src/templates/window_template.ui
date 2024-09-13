@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<template class="CFlapAppWindow" parent="GtkApplicationWindow">
+		<property name="title">CFlap</property>
+		<property name="default-width">1100</property>
+		<property name="default-height">700</property>
+		<child type="titlebar">
+			<object class="GtkHeaderBar">
+				<child type="start">
+					<object class="GtkMenuButton" id="gears">
+						<property name="direction">none</property>
+					</object>
+				</child>
+			</object>
+		</child>
+		<child>
+			<object class="GtkNotebook" id="notebook">
+				<property name="hexpand">true</property>
+				<property name="vexpand">true</property>
+				<property name="scrollable">true</property>
+			</object>
+		</child>
+	</template>
+</interface>

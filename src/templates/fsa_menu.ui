@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<object class="GtkBox" id="fsa_menu">
+		<property name="orientation">vertical</property>
+		<property name="spacing">10</property>
+		<child>
+			<object class="GtkButton" id="nfa_to_dfa_button">
+				<property name="label">NFA to DFA</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkButton" id="minimize_dfa_button">
+				<property name="label">Minimize DFA</property>
+			</object>
+		</child>
+	</object>
+</interface>

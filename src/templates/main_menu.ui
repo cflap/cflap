@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<menu id="main_menu">
+		<section>
+			<item>
+				<attribute name="label">_New Automaton</attribute>
+				<attribute name="action">app.new_automaton</attribute>
+			</item>
+		</section>
+	</menu>
+</interface>
